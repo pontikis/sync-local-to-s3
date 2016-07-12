@@ -9,6 +9,8 @@ S3CMD_CONFIG="-c /root/.s3cfg-custom"
 
 # s3cmd command params (set to "" for no params)
 # see http://s3tools.org/usage
+# ATTENTION --server-side-encryption is not working in older versions;
+#           use --add-header=x-amz-server-side-encryption:AES256 instead
 S3CMD_PARAMS="--delete-removed --verbose --server-side-encryption"
 
 # Local Data Source
