@@ -22,7 +22,7 @@ Documentation
 
 Clone 
 ```
-git clone git@github.com:pontikis/sync-local-to-s3.git
+git clone https://github.com/pontikis/sync-local-to-s3.git
 ```
 
 or Download: https://github.com/pontikis/sync-local-to-s3/archive/master.zip
