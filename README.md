@@ -2,16 +2,19 @@ sync-local-to-s3
 ================
 
 Bash script to sync local folder to Amazon S3
+
 (Amazon AWS account required)
 
 Copyright: Christos Pontikis http://www.pontikis.net 
 
 License: MIT https://raw.github.com/pontikis/sync-local-to-s3/master/MIT_LICENSE
 
-Release: 0.9.0 (12 Jul 2016) - View CHANGELOG
-https://raw.github.com/pontikis/sync-local-to-s3/master/CHANGELOG.md
+Release: 0.9.0 (12 Jul 2016)
+
+View CHANGELOG https://raw.github.com/pontikis/sync-local-to-s3/master/CHANGELOG.md
 
 Github https://github.com/pontikis/sync-local-to-s3
+
 Bitbucket https://bitbucket.org/pontikis/sync-local-to-s3
 
 Documentation
