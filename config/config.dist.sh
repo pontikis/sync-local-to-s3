@@ -9,25 +9,25 @@ S3CMD_CONFIG="-c /root/.s3cfg-custom"
 
 # s3cmd command params (set to "" for no params)
 # see http://s3tools.org/usage
-# ATTENTION --server-side-encryption is not working in older versions;
+# ATTENTION --server-side-encryption is not working in older s3cmd versions;
 #           use --add-header=x-amz-server-side-encryption:AES256 instead
 S3CMD_PARAMS="--delete-removed --verbose --server-side-encryption"
 
 # Local Data Source
-# attention: / is important to copy only the contents
-SOURCE="/store/google-takeout/"
+# attention: / is important if you want to copy only the contents
+SOURCE="/path/to/folder-name/"
 
-# Destination to S3
-DESTINATION="s3://google-takeout/"
+# Destination to S3 (folder-name is optional)
+DESTINATION="s3://bucket-name/folder-name/"
 
 # Set upload bandwidth limit (1000 kbps in this example) - (set to "" to disable)
 cmd_TRICKLE="$(which trickle) -s -u 1000"
 
-# Send mail after finish - (set to "" to disable)
+# Send mail after finish - (set to "0" to disable)
 do_send_mail=1
 mail_to=your_email_here
 
-# Shutdown after finish - (set to "" to disable)
+# Shutdown computer after finish - (set to "0" to disable)
 do_shutdown=1
 cmd_SHUTDOWN="/sbin/shutdown -h +1"
 
