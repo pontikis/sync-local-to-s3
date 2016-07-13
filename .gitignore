@@ -1,4 +1,7 @@
 # IDE files
 /.idea/*
 
-config.sh
+# ignore all files in config directory except config.dist.sh
+!config/
+config/*
+!config/config.dist.sh
