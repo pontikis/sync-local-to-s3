@@ -38,6 +38,13 @@ Just copy ```config.dist.sh``` somewhere (with any name you like) and make the a
 
 *Execute*
 
+For security reasons limit permissions to Owner
+```
+chmod 700 sync-local-to-s3.sh
+```
+
+
+then run something like
 ```
 sync-local-to-s3.sh /path/to/your/config
 ```
