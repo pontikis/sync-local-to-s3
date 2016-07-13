@@ -38,14 +38,6 @@ Just copy ```config.dist.sh``` somewhere (with any name you like) and make the a
 
 *Execute*
 
-Make ```sync-local-to-s3.sh``` executable with something like
-
-```
-chmod 700 sync-local-to-s3.sh
-```
-
-then run it
-
 ```
 sync-local-to-s3.sh /path/to/your/config
 ```
